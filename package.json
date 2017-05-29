@@ -1,0 +1,28 @@
+{
+  "name": "collegeapp",
+  "version": "1.0.0",
+  "description": "college app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u001b[2~https://github.com/ItsMeEC/college-v1.3.git"
+  },
+  "keywords": [
+    "college"
+  ],
+  "author": "EC",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "mongodb": "^2.2.26",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  }
+}
