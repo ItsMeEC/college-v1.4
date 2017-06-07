@@ -15,7 +15,7 @@ var router = function(nav) {
       var url =
       'mongodb://localhost:27017/college';
           mongodb.connect(url, function (err, db) {
-            var collection = db.collection('collegeInfo');
+            var collection = db.collection('colleges');
             collection.find({}).toArray(
               function(err,results){
                   res.render('colListView', {
@@ -32,7 +32,7 @@ var router = function(nav) {
       var url =
       'mongodb://localhost:27017/college';
           mongodb.connect(url, function (err, db) {
-          var collection = db.collection('collegeInfo');
+          var collection = db.collection('colleges');
             collection.findOne({_id: id},
               function(err,results){
                   res.render('colView', {
