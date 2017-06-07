@@ -60,7 +60,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h1>College Connection
+        <h1>College Info
           <p class="lead"></p>
         </h1>
       </div>
@@ -102,18 +102,17 @@
           <div class="row">    
             <br>
             <div class="col-md-2 col-sm-3 text-center">
-              <!-- <a class="story-title" href="#"><img alt="" src="http://api.randomuser.me/portraits/thumb/men/58.jpg" style="width:100px;height:100px" class="img-circle"></a> -->
+            <a class="story-title" href="#"><img alt="" src="<%=college.Image%>" style="width:100px;height:100px" class="img-circle"></a>
             </div>
             <div class="col-md-10 col-sm-9">
-              <h3><%=college.College%></h3>
+              <h3><%=college.Name%></h3>
               <div class="row">
                 <div class="col-xs-9">
-                  <h4><span class="label label-default"><%=college.Website%></span>
-                  <span class="label label-default"><%=college.Twitter%></span>
-                  <span class="label label-default"><%=college.Facebook%></span>
-                  <span class="label label-default"><%=college.Instagram%></span></h4><h4>
-                  
-                  </h4></div>
+                  <h4><a href="<%=college.Website%>" target="_blank"><span class="label label-default"><%=college.Website%></span></a>
+                  <a href="<%=college.Twitter%>" target="_blank"><span class="label label-default"><%=college.Twitter%></span></a>
+                  <a href="<%=college.Facebook%>" target="_blank"><span class="label label-default"><%=college.Facebook%></span></a>
+                  </h4>
+                  </div>
                 <div class="col-xs-3"></div>
               </div>
               <br><br>
@@ -121,13 +120,9 @@
           </div>
           <hr>
          
- 
-          <!--/stories-->
+
           
-          
-          <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
         
-          
         </div>
       </div>
                                                                                        
