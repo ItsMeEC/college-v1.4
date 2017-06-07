@@ -44,12 +44,14 @@ app.get('/', function(req, res) {
   });
 });
 
+app.get('/Contact', function(req, res) {
+  res.render('contact', {
+    nav: nav
+  });
+})
+
 app.get('/Colleges', function(req, res) {
   res.send('colleges');
-});
-
-app.get('/Contacts', function(req, res) {
-  res.send('contacts');
 });
 
 app.listen(port, function(err) {
