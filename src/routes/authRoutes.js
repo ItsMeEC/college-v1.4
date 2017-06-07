@@ -7,7 +7,7 @@ var router = function() {
   authRouter.route('/signUp')
     .post(function(req, res) {
       console.log(req.body);
-      var url = 'mongodb://localhost:27017/Colleges';
+      var url = 'mongodb://localhost:27017/college';
       mongodb.connect(url, function(err, db) {
         var collection = db.collection('users');
         var user = {
@@ -17,7 +17,7 @@ var router = function() {
 
         collection.insert(user, function(err, results) {
           req.login(results.ops[0], function() {
-            res.redirect('/auth/profile');
+            res.redirect('/Colleges');
           });
         });
 
@@ -28,7 +28,7 @@ var router = function() {
     .post(passport.authenticate('local', {
       failureRedirect: '/'
     }), function(req, res) {
-      res.redirect('/auth/profile');
+      res.redirect('/Colleges');
     });
 
   authRouter.route('/profile')
